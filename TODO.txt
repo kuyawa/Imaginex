@@ -1,0 +1,40 @@
+FIXME:
+
+- Uncommited transacions in thread?
+  CoreAnimation: warning, deleted thread with uncommitted CATransaction; set CA_DEBUG_TRANSACTIONS=1 in environment to log backtraces.
+
+TODO:
+
+- Change app icon to blue lens
+- Gallery form in dark, show as modal slide
+- On add gallery form, disable buttons if info not valid
+  if fields are empty
+  if gallery already exists
+  if gallery url can not be fetched
+? Use notifications to update UI
+? Remember last gallery for next run
+? reorganize code from viewcontroller to classes,
+? zoom in on double click. For next version
+
+-------------------------------------------------------------------------------------
+
+x add autoDownload item to Images menu. On: download on select. Off: do not download. Useful to delete ugly images
+x delete image on DEL key from gallery and thumbs
+x onDelete: rename thumb to _qwerty.jpg, delete main image, use deleted.jpg as main image for visual cue
+x onList: do not download again, check for _image.jpg as deleted
+x read 100 thumbs from folder
+x Get images from thumbs folder ordered by created time
+x On gallery refresh, get html from url, parse regex for thumbs, download all thumbs, show first thumb
+
+-------------------------------------------------------------------------------------
+
+Version 2:
+
+- App will fetch image list from server, asking for images since last visit
+- Users will be able to recommend feeds
+- Server will return list of images and client will download thumbs and images on demand
+- server.com/api/gallery/earthporn/2016-11-20/08:30:55
+  List: imgname, imgtitle, imgurl, thumb, thumburl
+
+Version for tvOS:
+- Huge pics!
