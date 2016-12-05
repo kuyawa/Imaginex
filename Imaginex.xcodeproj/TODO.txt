@@ -1,0 +1,31 @@
+TODO:
+
+- Restart as Imaginex
+
+----
+- Pack and deliver
+- delete image on DEL key from feed folder and thumbs. For next version
+- zoom in on double click. For next version
+- read 100 thumbs from folder not from feed. For next version
+x use + - keys to zoom in/out
+x use = key for zoom to fit
+
+- on add gallery form, disable buttons if info not valid
+  if fields are empty
+  if gallery already exists
+  if feed can not be fetched
+? reorganize code from viewcontroller to classes,
+  use notifications to update UI
+
+
+
+-------------------------------------------------------------------------------------
+
+App will fetch image list from server, asking for images since last visit
+Server will return list of images and client will download thumbs and images on demand
+
+server.com/api/gallery/earthporn/2016-11-20/08:30:55
+
+imgname, imgurl, thumb, thumburl
+
+Users will be able to recommend feeds

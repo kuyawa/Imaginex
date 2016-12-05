@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewThumbnail" customModule="Imaginex" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="mqx-kc-Jgh" id="FkK-oN-sNi"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="O4d-Wd-22Z"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="viewThumbnail" id="Hz6-mo-xeY" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-kc-Jgh">
+                    <rect key="frame" x="5" y="5" width="130" height="130"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="MTw-sj-WeS"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mqx-kc-Jgh" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="4dc-e7-1RE"/>
+                <constraint firstAttribute="trailing" secondItem="mqx-kc-Jgh" secondAttribute="trailing" constant="5" id="JDy-W8-hWD"/>
+                <constraint firstItem="mqx-kc-Jgh" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="Q4W-Ih-PJV"/>
+                <constraint firstAttribute="bottom" secondItem="mqx-kc-Jgh" secondAttribute="bottom" constant="5" id="pKM-bj-ymT"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="126.5"/>
+        </customView>
+        <collectionViewItem id="gUT-sk-ZFo" customClass="ViewThumbnail" customModule="Imaginex" customModuleProvider="target"/>
+    </objects>
+</document>
