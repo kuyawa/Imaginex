@@ -1,6 +1,6 @@
 #Imaginex
 
-**Imaginex** is an image browser for the desktop. Select your favorite galleries from imgur.com and download all the images from them to your desktop for better consumption.
+**Imaginex** is an image browser for the desktop developed in Swift. Select your favorite galleries from imgur.com and download all the images from the web to your desktop for better consumption. You can then zoom in or out, explore the gallery folder or set an image as a wallpaper for your desktop.
 
 Here is a screenshot of the application: 
 
